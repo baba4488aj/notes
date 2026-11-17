@@ -1,0 +1,29 @@
+Draining Tank Time
+
+QUASI-STEADY DRAINAGE
+Tank level changes slowly, but outlet is modeled by instantaneous steady energy.
+
+IDEAL LARGE TANK with outlet Ao:
+$$V_o\approx\sqrt{2gh}$$
+$$Q=A_o\sqrt{2gh}$$
+
+TANK CONTINUITY
+$$A_t(h)\frac{dh}{dt}=-Q(h)$$
+
+CONSTANT AREA At, no losses:
+$$t=\frac{2A_t}{A_o\sqrt{2g}}$$
+$$\times(\sqrt{h_i}-\sqrt{h_f})$$
+
+If discharge coefficient Cd specified, replace Ao by Cd*Ao.
+If pipe/fitting loss K specified instead, derive Q(h) from full energy; DO NOT automatically also add Cd.
+
+IF AREA VARIES WITH HEIGHT
+Separate variables with At(h) inside the integral:
+$$t=\int_{h_f}^{h_i}\frac{A_t(h)}{Q(h)}dh$$
+
+DISTINGUISH PROBLEM TYPES
+Acceleration / pressure startup -> unsteady Bernoulli with local inertia integral.
+Time to drain -> energy for Q(h) + changing tank level continuity.
+
+SIGN CHECK
+During drainage dh/dt < 0 but elapsed t > 0. Reverse limits properly.

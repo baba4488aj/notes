@@ -1,0 +1,36 @@
+Solutions Q3 and Q4
+
+Q3 STREAM FUNCTION
+Given u=ax+by, v=-ay; a=2, b=3.
+Divergence ux+vy=a-a=0.
+Integrate psi_y=u:
+$$\psi=axy+\frac{b}{2}y^2+F(x)$$
+Match -psi_x=v -> F'=0.
+$$\psi=2xy+1.5y^2+C$$
+
+Q3 ACCELERATION
+At any x,y, after expanding convective terms:
+$$a_x=a^2x,\quad a_y=a^2y$$
+At (1,2): a=(4,8) m/s^2.
+With rho=1000, horizontal plane:
+px=-4000 Pa/m; py=-8000 Pa/m.
+
+Q3 ROTATION
+$$\zeta_z=v_x-u_y=-b=-3$$
+$$\Omega_z=-1.5\ \text{1/s}$$
+Rotational (clockwise local spin).
+
+Q4 LAMINAR PIPE
+Given D=.0200, L=2, mu=.10, rho=1000, umax=.200.
+$$\bar V=\frac{1}{2}u_{max}=0.100$$
+$$Q=\frac{\pi D^2}{4}\bar V$$
+=3.14159e-5 m^3/s.
+$$Re=\frac{\rho\bar VD}{\mu}=20$$
+Laminar.
+$$\Delta p=\frac{32\mu L\bar V}{D^2}$$
+=1600 Pa.
+$$|\tau_w|=\frac{8\mu\bar V}{D}$$
+=4.00 Pa.
+$$\nu=\frac{\mu}{\rho}=0.0001$$
+$$Q_{max}=\frac{\pi D\nu Re_{crit}}{4}$$
+=0.00361283 m^3/s for Recrit=2300. Threshold estimate, not guaranteed transition point.

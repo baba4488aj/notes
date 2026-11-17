@@ -1,0 +1,34 @@
+Two Moving Plates
+
+FULL GAP h, wall positions y=0 and y=h. Signed wall speeds U0 and U1. Pressure/gravity forcing:
+$$G=-\frac{dp}{dx}+\rho g_x$$
+
+BCs:
+$u(0)=U_0$, $u(h)=U_1$.
+
+GENERAL PROFILE
+$$u=U_0+\frac{U_1-U_0}{h}y$$
+$$+\frac{G}{2\mu}y(h-y)$$
+
+AVERAGE AND FLOW
+$$\bar V=\frac{U_0+U_1}{2}+\frac{Gh^2}{12\mu}$$
+$$q'=h\bar V$$
+$$Q=bh\bar V$$
+
+SHEAR PROFILE
+$$\tau_{xy}=\mu\frac{U_1-U_0}{h}$$
+$$+\frac{G}{2}(h-2y)$$
+
+DERIVATION FROM ODE
+$u=-Gy^2/(2\mu)+C_1y+C_2$.
+BC y=0: C2 = U0.
+BC y=h:
+$$C_1=\frac{U_1-U_0}{h}+\frac{Gh}{2\mu}$$
+
+TRICKS
+- Opposite plate motion? One U must be negative.
+- No pressure forcing? G=0 if gx=0 too.
+- Given Q? Solve average formula for G.
+- Given wall stress? Differentiate profile and evaluate wall.
+- Given zero net transport? Set Q=0; u need not vanish.
+- For speed extrema solve u'=0 AND compare two walls.

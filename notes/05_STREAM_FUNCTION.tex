@@ -1,0 +1,33 @@
+Stream Functions
+
+2D Cartesian, incompressible flow:
+$$u=\frac{\partial\psi}{\partial y}$$
+$$v=-\frac{\partial\psi}{\partial x}$$
+Units of psi: m^2/s.
+
+FIND PSI FROM u AND v
+1. Integrate u with respect to y.
+2. ADD F(x,t).
+3. Differentiate result w.r.t. x.
+4. Negate and match given v.
+5. Solve F; free additive constant is OK.
+
+EXAMPLE
+$u=2x+3y$, $v=-2y$.
+Integrate u dy:
+$$\psi=2xy+1.5y^2+F(x)$$
+Match v: $F'(x)=0$, so F is constant.
+This field has zero divergence but nonzero vorticity.
+
+STREAMLINES
+A streamline satisfies $\psi=\text{constant}$ at an instant.
+$$\frac{dy}{dx}=\frac{v}{u}$$
+
+FLOW BETWEEN STREAMLINES
+$$q'=\psi(x,b)-\psi(x,a)$$
+Signed flow per unit depth through vertical segment y=a to b. Total $Q=b_{width}q'$.
+
+POLAR CONVENTION
+$$v_r=\frac{1}{r}\frac{\partial\psi}{\partial\theta}$$
+$$v_\theta=-\frac{\partial\psi}{\partial r}$$
+Streamline: instantaneous direction; pathline: particle trajectory. They coincide in steady flow.

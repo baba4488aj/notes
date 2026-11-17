@@ -1,0 +1,40 @@
+Moving Belt Film
+
+COORDINATES
+x positive DOWNHILL; y away from belt.
+Belt at y=0; free surface y=h.
+Signed belt speed Uw; uphill speed Vb means Uw=-Vb.
+Inclined belt: $g_x=g\sin\theta$.
+Vertical belt: gx=g.
+
+Define:
+$$G=-\frac{dp}{dx}+\rho g_x$$
+Uniform atmospheric surface, no axial pressure gradient: dp/dx=0.
+
+REDUCED EQUATION
+$$\mu u''=-G$$
+BC 1: $u(0)=U_w$ (no slip).
+BC 2: $u'(h)=0$ (stress free, NOT u(h)=0).
+
+PROFILE
+$$u=U_w+\frac{G}{\mu}(hy-\frac{y^2}{2})$$
+
+DERIVATION
+$u'=-Gy/\mu+C_1$.
+BC at y=h -> $C_1=Gh/\mu$.
+Integrate u and set C2=Uw.
+
+SHEAR, MEAN, FLOW
+$$\tau_{xy}=G(h-y)$$
+$$\bar V=U_w+\frac{Gh^2}{3\mu}$$
+$$Q=bh\bar V$$
+Surface speed:
+$$u(h)=U_w+\frac{Gh^2}{2\mu}$$
+Wall shear magnitude = |Gh|.
+
+IMPOSED SURFACE SHEAR
+If $\mu u'(h)=\tau_s$:
+$$u=U_w+\frac{G}{\mu}(hy-\frac{y^2}{2})$$
+$$+\frac{\tau_s}{\mu}y$$
+$$\bar V=U_w+\frac{Gh^2}{3\mu}$$
+$$+\frac{\tau_sh}{2\mu}$$

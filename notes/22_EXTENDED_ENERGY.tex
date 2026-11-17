@@ -1,0 +1,35 @@
+Extended Energy
+
+FOLLOW FLOW FROM STATION 1 TO 2.
+
+COMPLETE HEAD BALANCE
+$$\frac{p_1}{\rho g}+\frac{\alpha_{E1}\bar V_1^2}{2g}$$
+$$+z_1+H_p$$
+$$=\frac{p_2}{\rho g}+\frac{\alpha_{E2}\bar V_2^2}{2g}$$
+$$+z_2+H_t+H_L$$
+
+Hp = pump head ADDED to fluid.
+Ht = turbine head REMOVED.
+HL >= 0 = total irreversible loss along FLOW direction.
+
+MEMORY RULE
+Upstream energy + added = downstream energy + extracted + losses.
+
+LECTURE NOTATION
+For energy per mass (J/kg), multiply head equation by g; replace HL in m by hL=gHL in J/kg.
+
+ENERGY CORRECTION
+Use averaged V with:
+$$\alpha_E=\frac{\int_Au^3dA}{A\bar V^3}$$
+Uniform profile alphaE=1.
+Laminar pipe alphaE=2.
+Fixed-plate Poiseuille alphaE=54/35.
+For high-Re pipe model alphaE about 1.
+
+Use local speed in streamline Bernoulli. Do NOT multiply Darcy head loss by alphaE.
+
+HEAD LOSS WITH NO MACHINES
+$$H_L=\frac{p_1-p_2}{\rho g}$$
+$$+\frac{\alpha_{E1}\bar V_1^2-\alpha_{E2}\bar V_2^2}{2g}$$
+$$+z_1-z_2$$
+If same z and same speed/alpha: simply pressure drop divided by rho*g.

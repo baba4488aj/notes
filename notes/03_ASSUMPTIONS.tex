@@ -1,0 +1,26 @@
+Assumptions and BCs
+
+STEADY: time derivatives vanish; spatial acceleration may remain.
+
+INCOMPRESSIBLE: constant density in these models, $\nabla\cdot\vec V=0$; NOT constant velocity.
+
+FULLY DEVELOPED: axial profile does not change downstream; dp/dx and shear may be nonzero.
+
+PARALLEL FLOW: transverse components vanish; for steady u(y), convective acceleration is zero.
+
+INVISCID: negligible modeled viscosity. IRROTATIONAL: curl = 0. Different concepts.
+
+WIDE PLATES: neglect edge effects.
+PIPE: axial u(r), no swirl/radial flow when axisymmetric, fully developed.
+
+BOUNDARIES
+Fixed no-slip wall: fluid tangential velocity = 0.
+Moving no-slip wall: fluid speed = SIGNED wall speed.
+Symmetry plane or pipe center:
+$$\frac{du}{dn}=0$$
+Free surface with negligible gas shear: du/dn = 0, not u = 0.
+Imposed surface shear: $\mu du/dn=\tau_s$ with consistent normal.
+Fluid interface: tangential speed and shear stress continuous (usual model).
+
+SETUP WARNING
+A moving plate can destroy midpoint symmetry. Do not force du/dy = 0 at gap midpoint unless symmetry holds.

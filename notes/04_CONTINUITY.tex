@@ -1,0 +1,27 @@
+Continuity
+
+DIFFERENTIAL MASS BALANCE
+$$\frac{\partial\rho}{\partial t}+\nabla\cdot(\rho\vec V)=0$$
+Constant rho and incompressible:
+$$\frac{\partial u}{\partial x}+\frac{\partial v}{\partial y}+\frac{\partial w}{\partial z}=0$$
+
+CYLINDRICAL INCOMPRESSIBLE
+$$\frac{1}{r}\frac{\partial(rv_r)}{\partial r}$$
+$$+\frac{1}{r}\frac{\partial v_\theta}{\partial\theta}+\frac{\partial v_z}{\partial z}=0$$
+
+STEADY CONTROL VOLUME
+$$\sum\dot m_{in}=\sum\dot m_{out}$$
+For one inlet and one outlet:
+$$\rho_1A_1\bar V_1=\rho_2A_2\bar V_2$$
+Constant density:
+$$Q=A\bar V=\text{constant}$$
+
+FIELD TEST
+Differentiate each velocity component w.r.t. its matching coordinate and sum.
+
+MISSING VELOCITY EXAMPLE
+Given $u=ax^2$, $w=0$:
+$$\frac{\partial v}{\partial y}=-2ax$$
+$$v=-2axy+F(x,t)$$
+If v(x,0,t) = 0, then F = 0.
+Never forget the integration function before using boundary conditions.

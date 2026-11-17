@@ -1,0 +1,28 @@
+Unsteady Bernoulli
+
+INCOMPRESSIBLE INVISCID INSTANTANEOUS STREAMLINE, coordinate s from 1 to 2:
+$$\int_1^2\frac{\partial V}{\partial t}ds$$
+$$+\frac{V_2^2-V_1^2}{2}$$
+$$+\frac{p_2-p_1}{\rho}+g(z_2-z_1)=0$$
+Extra integral is LOCAL acceleration with units m^2/s^2.
+
+UNIFORM STRAIGHT TUBE of length L, area constant and V=V(t):
+$$\int_1^2\frac{\partial V}{\partial t}ds$$
+$$=L\frac{dV}{dt}$$
+Since same V at both ends, kinetic terms cancel:
+$$L\frac{dV}{dt}=\frac{p_1-p_2}{\rho}$$
+$$+g(z_1-z_2)$$
+
+EXAMPLE
+Water rho=1000; horizontal L=5m; pressure difference 10 kPa, no friction:
+$$\frac{dV}{dt}=\frac{10000}{1000(5)}$$
+= 2 m/s^2. For V(0)=0: V=2t under this ideal early-startup model.
+
+VARIABLE CROSS-SECTION
+For Q(t) and A(s):
+$$V(s,t)=\frac{Q(t)}{A(s)}$$
+Local inertia integral:
+$$\frac{dQ}{dt}\int_1^2\frac{ds}{A(s)}$$
+End kinetic terms generally differ.
+
+Incompressible DOES NOT mean local acceleration equals zero.

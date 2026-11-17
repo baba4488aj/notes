@@ -1,0 +1,29 @@
+Euler and Pressure
+
+For inviscid flow:
+$$\nabla p=\rho(\vec g-\vec a)$$
+Horizontal x-y plane: gx=gy=0:
+$$p_x=-\rho a_x$$
+$$p_y=-\rho a_y$$
+Vertical y upward: gy = -g:
+$$p_y=\rho(-g-a_y)$$
+
+EXAMPLE FROM ACCELERATION NOTE
+rho = 1000 kg/m^3; a=(-7,14).
+Horizontal plane: px=+7000 Pa/m; py=-14000 Pa/m.
+If y vertical UP: py=-23810 Pa/m.
+Always draw gravity before selecting signs.
+
+PRESSURE FIELD FROM GRADIENT
+Integrate px with respect to x and add F(y,z,t). Determine F using py and pz. A reference p is required for the final additive constant.
+
+Example steady field:
+$u=Ax+By$, $v=Bx-Ay$.
+Let $C=A^2+B^2$; a=(Cx,Cy).
+Horizontal plane:
+$$p=p_{ref}-\frac{\rho C}{2}S$$
+$$S=x^2-x_{ref}^2+y^2-y_{ref}^2$$
+
+WITH VISCOSITY
+Do not use Euler when the viscous term matters:
+$$\nabla p=\rho\vec g+\mu\nabla^2\vec V-\rho\vec a$$

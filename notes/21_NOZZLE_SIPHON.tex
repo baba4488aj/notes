@@ -1,0 +1,34 @@
+Nozzle and Siphon
+
+NOZZLE TO ATMOSPHERE, IDEAL
+Outlet gauge pressure 0.
+$$p_{1,g}=\rho[\frac{V_2^2-V_1^2}{2}$$
+$$+g(z_2-z_1)]$$
+Compute V1 from area continuity first.
+Bends change direction, but scalar Bernoulli uses speed squared.
+
+LARGE OPEN TANK -> FREE JET
+$$V_{out}=\sqrt{2g\Delta z}$$
+If tank surface area At is finite and exit Ao:
+$$V_{surface}=\frac{A_o}{A_t}V_{out}$$
+$$V_{out}=\sqrt{\frac{2g\Delta z}{1-(A_o/A_t)^2}}$$
+Quasi-steady ideal model.
+
+SIPHON CREST PRESSURE
+From source free surface to crest c:
+$$p_{c,abs}=p_{atm}+\rho g(z_s-z_c)$$
+$$-\frac{\rho V_c^2}{2}-\rho gH_{L,s\to c}$$
+
+VAPOR-PRESSURE LIMIT
+$$p_{c,abs}\ge p_{vapor}$$
+Maximum crest height above source:
+$$z_c-z_s\le\frac{p_{atm}-p_{vapor}}{\rho g}$$
+$$-\frac{V_c^2}{2g}-H_{L,s\to c}$$
+Use absolute vapor pressure; include only losses UPSTREAM of crest.
+
+STAGNATION / PITOT
+$$q=\frac{\rho V^2}{2}$$
+$$p_0=p+q$$
+$$V=\sqrt{\frac{2(p_0-p)}{\rho}}$$
+Differential U-tube at same elevation:
+$$\Delta p=(\rho_m-\rho)g\Delta h$$

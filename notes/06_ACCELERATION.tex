@@ -1,0 +1,35 @@
+Material Acceleration
+
+A moving particle can accelerate even if the field is steady.
+
+MATERIAL DERIVATIVE
+$$\frac{D}{Dt}=\frac{\partial}{\partial t}$$
+$$+u\frac{\partial}{\partial x}+v\frac{\partial}{\partial y}$$
+$$+w\frac{\partial}{\partial z}$$
+
+X ACCELERATION
+$$a_x=u_t+uu_x+vu_y+wu_z$$
+Y ACCELERATION
+$$a_y=v_t+uv_x+vv_y+wv_z$$
+Z ACCELERATION
+$$a_z=w_t+uw_x+vw_y+ww_z$$
+Subscript derivative e.g. $u_x=\partial u/\partial x$.
+
+LOCAL = partial-time term.
+CONVECTIVE = velocity times spatial gradients.
+
+PROCEDURE
+1. Make derivative table: t, x, y, z.
+2. Form local and convective parts separately.
+3. Add; THEN substitute point coordinates.
+4. Magnitude: $|a|=\sqrt{a_x^2+a_y^2+a_z^2}$.
+5. Check quadrant of direction (atan2).
+
+EXAMPLE
+$u=-Ax+Bt$; $v=Ay+Bt$; w=0.
+Local accel = (B,B,0).
+Convective x = $A^2x-ABt$.
+Convective y = $A^2y+ABt$.
+For A=1, B=2, x=1, y=2, t=5:
+a = (-7,14) m/s^2.
+Magnitude 15.65; angle 116.57 deg from +x.

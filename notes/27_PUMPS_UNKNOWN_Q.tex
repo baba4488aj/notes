@@ -1,0 +1,36 @@
+Pump Unknown Q
+
+UNKNOWN Q
+1. Convert every segment velocity to Q/A.
+2. Write full extended energy equation.
+3. If f and K known, solve algebraically for Q.
+4. If f depends on Re, iterate.
+
+OPEN RESERVOIRS, NO PUMP
+With outlet loss INCLUDED:
+$$\Delta z=(f_D\frac{L}{D}+\sum K)\frac{\bar V^2}{2g}$$
+Both endpoints are reservoir SURFACES, speeds about 0.
+
+IF ENDPOINT IS A FREE JET
+No exit-to-reservoir K:
+$$\Delta z=(\alpha_{E,exit}+f_D\frac{L}{D}$$
+$$+\sum K_{other})\frac{\bar V^2}{2g}$$
+Do not double count exit kinetic energy.
+
+TURBULENT, f UNKNOWN
+Guess f -> solve Q -> calculate Re -> update Moody/Colebrook f -> repeat to consistency.
+
+LAMINAR ROUND PIPE
+Substitute f=64/Re; major loss proportional to Q, not Q^2.
+Always recheck flow regime.
+
+CHANGING DIAMETER
+At constant Q and f:
+$$H_{major}\propto\frac{LQ^2}{D^5}$$
+For laminar round pipe:
+$$\Delta p\propto\frac{\mu LQ}{D^4}$$
+Real f changes with Re and roughness ratio. These are conditional scaling relations.
+
+GEOMETRY WARNINGS
+Entrance K=0.75 in HW12 was specific to reentrant entrance; do not reuse automatically.
+If new suction length is given, include its loss even if original example neglected it.

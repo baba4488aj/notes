@@ -1,0 +1,35 @@
+Flow Area Integrals
+
+GENERAL FORMULAS
+$$Q=\int_Au\,dA$$
+$$\bar V=\frac{Q}{A}$$
+$$\dot m=\rho Q$$
+
+PLATES: width b, full gap h.
+$$dA=b\,dy$$
+$$Q=b\int_0^h u(y)\,dy$$
+$$\bar V=\frac{1}{h}\int_0^h u(y)\,dy$$
+
+ROUND PIPE: ring area dA = 2*pi*r*dr.
+$$Q=2\pi\int_0^R u(r)r\,dr$$
+$$\bar V=\frac{2}{R^2}\int_0^R u(r)r\,dr$$
+
+WHY THE FACTOR r?
+Outer rings represent more cross-sectional area than inner rings.
+
+STATIONARY PLATE PARABOLA
+$$u=u_{max}(1-\frac{4\eta^2}{h^2})$$
+Integrating from -h/2 to h/2:
+$$\bar V=\frac{2}{3}u_{max}$$
+
+LAMINAR PIPE PARABOLA
+$$u=u_{max}(1-\frac{r^2}{R^2})$$
+Integrating with r dr:
+$$\bar V=\frac{1}{2}u_{max}$$
+
+POWER-LAW PROFILE FAMILY
+If $u=u_{max}[1-(r/R)^n]$:
+$$\frac{\bar V}{u_{max}}=\frac{n}{n+2}$$
+Only valid for that exact family.
+
+MOVING PLATES: never assume either stationary plate or pipe mean/max ratio.

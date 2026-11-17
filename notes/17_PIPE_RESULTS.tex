@@ -1,0 +1,32 @@
+Hagen Poiseuille
+
+HORIZONTAL FULLY DEVELOPED LAMINAR ROUND PIPE.
+Radius R; diameter D=2R; dp/dz < 0 for +z flow.
+
+VELOCITY PROFILE
+$$u(r)=-\frac{1}{4\mu}\frac{dp}{dz}(R^2-r^2)$$
+
+MAX AND MEAN
+$$u_{max}=-\frac{R^2}{4\mu}\frac{dp}{dz}$$
+$$\bar V=-\frac{R^2}{8\mu}\frac{dp}{dz}$$
+$$\bar V=\frac{1}{2}u_{max}$$
+
+VOLUME FLOW
+$$Q=\pi R^2\bar V$$
+$$Q=-\frac{\pi R^4}{8\mu}\frac{dp}{dz}$$
+
+PRESSURE GRADIENT
+$$\frac{dp}{dz}=-\frac{8\mu Q}{\pi R^4}$$
+$$\frac{dp}{dz}=-\frac{32\mu\bar V}{D^2}$$
+
+PRESSURE DROP OVER L
+$$\Delta p=\frac{32\mu L\bar V}{D^2}$$
+$$\Delta p=\frac{128\mu LQ}{\pi D^4}$$
+
+PIPE WITH AXIAL GRAVITY
+Define $G=-dp/dz+\rho g_z$.
+$$u(r)=\frac{G}{4\mu}(R^2-r^2)$$
+$$\bar V=\frac{GR^2}{8\mu}$$
+For inclined/vertical flow, pressure drop and frictional loss differ because elevation changes.
+
+Verify Re is laminar AFTER calculating Q/V.

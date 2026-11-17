@@ -1,0 +1,35 @@
+Darcy and Minor Loss
+
+MAJOR PIPE HEAD LOSS
+$$H_{major}=f_D\frac{L}{D}\frac{\bar V^2}{2g}$$
+Darcy fD (NOT Fanning Cf).
+Laminar round pipe:
+$$f_D=\frac{64}{Re_D}$$
+Turbulent: Moody chart using Re and relative roughness epsilon/D.
+
+COLEBROOK (optional numerical check)
+$$\frac{1}{\sqrt{f_D}}=-2\log[\frac{\epsilon}{3.7D}$$
+$$+\frac{2.51}{Re_D\sqrt{f_D}}]$$
+Use base-10 log. Iteration required. Chart may be supplied instead.
+
+FITTINGS / MINOR LOSSES
+$$H_{minor}=\sum_iK_i\frac{V_{ref,i}^2}{2g}$$
+$$H_L=\sum H_{major}+\sum H_{minor}$$
+For one common diameter:
+$$H_L=(f_D\frac{L}{D}+\sum K)\frac{\bar V^2}{2g}$$
+
+Different diameters: calculate EACH segment with its own V and Re.
+
+SUDDEN EXPANSION
+$$H_{exp}=\frac{(V_1-V_2)^2}{2g}$$
+$$K_{exp}=(1-\frac{A_1}{A_2})^2$$
+This K uses upstream smaller-pipe speed in the usual model.
+
+DISCHARGE INTO LARGE RESERVOIR: exit K about 1.
+FREE JET endpoint: keep exit kinetic energy; do NOT add reservoir-exit loss.
+
+CONTRACTION K convention in lecture uses downstream small-pipe speed.
+
+Measured major loss, level equal-D taps:
+$$f_D=\frac{2D\Delta p}{\rho L\bar V^2}$$
+Exclude fitting losses when inferring straight-pipe f.

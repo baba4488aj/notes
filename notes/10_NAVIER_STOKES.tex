@@ -1,0 +1,31 @@
+Navier Stokes to ODE
+
+Constant rho, mu Newtonian equation:
+$$\rho\vec a=-\nabla p+\rho\vec g+\mu\nabla^2\vec V$$
+With $\vec a=D\vec V/Dt$.
+
+X COMPONENT
+$$\rho(u_t+uu_x+vu_y+wu_z)$$
+$$=-p_x+\rho g_x$$
+$$+\mu(u_{xx}+u_{yy}+u_{zz})$$
+
+ASSUME steady, fully developed, parallel wide-plate flow $u=u(y)$, v=w=0. Then time/convective terms, uxx, uzz vanish.
+
+REDUCED x MOMENTUM
+$$0=-\frac{dp}{dx}+\rho g_x+\mu u''$$
+Define driving gradient:
+$$G=-\frac{dp}{dx}+\rho g_x$$
+Then:
+$$\mu u''=-G$$
+Integrate ONCE:
+$$u'=-\frac{G}{\mu}y+C_1$$
+Integrate TWICE:
+$$u=-\frac{G}{2\mu}y^2+C_1y+C_2$$
+
+Use TWO independent boundary conditions to find C1,C2. This same quadratic solves Couette, Poiseuille, and belt-film cases; only BCs change.
+
+Check by differentiating twice, substituting each boundary, testing G=0 and dimensions.
+
+SIGN RULE
+With +x inlet to outlet, positive pressure drop $\Delta p=p_{in}-p_{out}$:
+$$\frac{dp}{dx}=-\frac{\Delta p}{L}$$

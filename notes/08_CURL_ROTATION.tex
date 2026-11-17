@@ -1,0 +1,29 @@
+Curl and Rotation
+
+Vorticity is velocity CURL:
+$$\vec\zeta=\nabla\times\vec V$$
+Components:
+$$\zeta_x=w_y-v_z$$
+$$\zeta_y=u_z-w_x$$
+$$\zeta_z=v_x-u_y$$
+Angular rotation is HALF vorticity:
+$$\vec\Omega=\frac{\vec\zeta}{2}$$
+For 2D flow:
+$$\Omega_z=\frac{1}{2}(v_x-u_y)$$
+Positive Omega_z: CCW local spin.
+Negative: clockwise.
+Units: 1/s.
+
+HOW TO TEST IRROTATIONAL
+All components of curl must equal 0 THROUGHOUT the region. Zero at a point/line does not prove global irrotationality.
+
+EXAMPLE
+$u=2xy$, $v=-x^2y$:
+$$\Omega_z=-x(y+1)$$
+Zero at x=0 or y=-1, but rotational generally.
+
+TRAPS
+Incompressible is NOT the same as irrotational.
+Curved streamlines do not necessarily indicate local rotation.
+For straight shear $u=cy$, v=0:
+$$\zeta_z=-c$$

@@ -1,0 +1,35 @@
+Solution Q1 20pt
+
+QUESTION 1 SOLUTION
+Given h=.004m; U=.60m/s; mu=.20 Pa s; dp/dx=+30000 Pa/m; b=.50m.
+
+(a) BC: u(0)=0, u(h)=U. Steady parallel flow gx=0:
+$$0=-\frac{dp}{dx}+\mu u''$$
+$$u''=\frac{30000}{0.20}=150000$$
+
+(b) Integrate twice:
+$$u=75000y^2+C_1y+C_2$$
+BC y=0: C2=0.
+BC y=h: $C_1=U/h-75000h$.
+$$C_1=150-300=-150$$
+$$u(y)=75000y^2-150y$$
+Units u m/s with y in m.
+$$\alpha_C=-\frac{h^2}{2\mu U}\frac{dp}{dx}=-2$$
+$$\bar V=U(\frac{1}{2}+\frac{\alpha_C}{6})$$
+$$\bar V=0.100\ \text{m/s}$$
+$$Q=bh\bar V=0.000200$$
+Units Q m^3/s; positive NET flow.
+
+(c) Set u=y(75000y-150)=0. Interior root y=.00200m = h/2.
+Set derivative to zero:
+$$u'=150000y-150=0$$
+$$y_*=0.00100\ \text{m}=h/4$$
+Because u''>0, MINIMUM there:
+$$u(y_*)=-0.0750\ \text{m/s}$$
+Global maximum is at upper wall: u=.600m/s.
+
+(d) Shear:
+$$\tau_{xy}=\mu(150000y-150)$$
+At y=0: -30.0Pa.
+At y=h: +90.0Pa.
+These are signed stress components, not automatically wall-force directions.

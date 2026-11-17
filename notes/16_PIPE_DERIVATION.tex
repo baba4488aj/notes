@@ -1,0 +1,30 @@
+Laminar Pipe Derive
+
+CYLINDRICAL PIPE: radial r, radius R, axial z.
+Assume steady, laminar, Newtonian, fully developed axisymmetric flow: axial u(r), vr=vtheta=0.
+
+HORIZONTAL PIPE (no axial gravity)
+$$\frac{\mu}{r}\frac{d}{dr}(r\frac{du}{dr})=\frac{dp}{dz}$$
+Do NOT use plane-flow u'' for a pipe.
+
+STEP 1: multiply by r/mu:
+$$\frac{d}{dr}(ru')=\frac{r}{\mu}\frac{dp}{dz}$$
+STEP 2: integrate:
+$$ru'=\frac{r^2}{2\mu}\frac{dp}{dz}+C_1$$
+STEP 3: divide by r:
+$$u'=\frac{r}{2\mu}\frac{dp}{dz}+\frac{C_1}{r}$$
+STEP 4: integrate:
+$$u=\frac{r^2}{4\mu}\frac{dp}{dz}$$
+$$+C_1\ln r+C_2$$
+
+FINITE CENTERLINE: C1=0 (log term would diverge at r=0).
+NO SLIP: u(R)=0:
+$$C_2=-\frac{R^2}{4\mu}\frac{dp}{dz}$$
+
+FINAL PROFILE
+$$u(r)=\frac{1}{4\mu}\frac{dp}{dz}(r^2-R^2)$$
+Equivalently:
+$$u(r)=-\frac{1}{4\mu}\frac{dp}{dz}(R^2-r^2)$$
+Positive flow along +z requires dp/dz < 0 in horizontal pipe.
+
+ANNULUS: no fluid at r=0; do NOT set log coefficient to 0 automatically. Use 2 wall BCs.

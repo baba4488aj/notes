@@ -1,0 +1,30 @@
+Pump Known Q
+
+KNOWN Q: SIX STEPS
+1. Convert Q, lengths, D, fluid properties. Compute each $\bar V_i=Q/A_i$.
+2. Find each Re, relative roughness, Darcy friction factor.
+3. Tabulate lengths and fitting K values. Split SUCTION vs DISCHARGE; count every component exactly once.
+4. Outlet d to destination surface B: solve pd with ONLY d->B losses.
+5. Source surface A to inlet s: solve ps with ONLY A->s losses.
+6. Full surface A->B equation: solve pump head and power.
+
+PUMP OUTLET to LARGE TANK B
+$$\frac{p_d}{\rho g}=\frac{p_B}{\rho g}$$
+$$+z_B-z_d+H_{L,dB}$$
+$$-\frac{\alpha_{Ed}\bar V_d^2}{2g}$$
+
+SOURCE A to PUMP INLET
+$$\frac{p_s}{\rho g}=\frac{p_A}{\rho g}$$
+$$+z_A-z_s-H_{L,As}$$
+$$-\frac{\alpha_{Es}\bar V_s^2}{2g}$$
+
+OPEN LARGE RESERVOIRS A and B
+$$H_p=z_B-z_A+H_{L,total}$$
+
+HYDRAULIC POWER
+$$P_{hyd}=\rho gQH_p$$
+INPUT POWER
+$$P_{in}=\frac{P_{hyd}}{\eta_p}$$
+
+If negligible change in z and velocity between two pump taps, $P_{hyd}=Q(p_d-p_s)$.
+Do not use outlet p alone as pump pressure rise. Efficiency increases required shaft power; it does not change prescribed-flow pipe loss.

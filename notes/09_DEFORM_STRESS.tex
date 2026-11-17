@@ -1,0 +1,36 @@
+Deformation and Stress
+
+NORMAL STRAIN RATES
+$$e_{xx}=u_x$$
+$$e_{yy}=v_y$$
+$$e_{zz}=w_z$$
+Their sum is divergence.
+
+ENGINEERING SHEAR RATE
+$$\dot\gamma_{xy}=u_y+v_x$$
+Tensor shear strain rate is HALF:
+$$e_{xy}=\frac{1}{2}(u_y+v_x)$$
+
+NEWTONIAN SHEAR STRESS
+$$\tau_{xy}=\mu(u_y+v_x)$$
+$$\tau_{yz}=\mu(v_z+w_y)$$
+$$\tau_{zx}=\mu(w_x+u_z)$$
+
+NORMAL STRESS (INCOMPRESSIBLE)
+$$\sigma_{xx}=-p+2\mu u_x$$
+Similarly for yy and zz.
+General compressible Stokes model:
+$$\sigma_{xx}=-p+2\mu u_x$$
+$$-\frac{2}{3}\mu(\nabla\cdot\vec V)$$
+
+Stokes hypothesis: zero bulk-viscosity combination; NOT mu=0.
+
+SIMPLE AXIAL FLOW u(y)
+$$\tau_{xy}=\mu\frac{du}{dy}$$
+At wall, evaluate derivative at the correct y.
+Signed stress and force direction can differ with surface normal and wall/fluid viewpoint.
+
+WALL FORCE MAGNITUDE
+$$F=|\tau_w|A_{wet}$$
+$$P=F|U_{wall}|$$
+Use wetted wall area, NOT flow cross-section.
